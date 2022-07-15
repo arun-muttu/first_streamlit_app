@@ -34,5 +34,5 @@ streamlit.dataframe(fruityvice_normalized)
 streamlit.text(fruityvice_response.json())
 r=1
 for fruit in [fruits_to_show]:
-  r=r+
+  r=r+1
   streamlit.text(r)
