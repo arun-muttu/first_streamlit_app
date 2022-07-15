@@ -31,7 +31,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
-streamlit.text(fruits_to_show.json())
+streamlit.text(pandas.json_normalize(fruits_to_show.json()))
 r=1
 for fruit in [fruits_to_show]:
   r=r+1
