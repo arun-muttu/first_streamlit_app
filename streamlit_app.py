@@ -32,4 +32,4 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 for fruit in [fruits_to_show]:
-  streamlit.text('fruit')
+  streamlit.text(fruit)
